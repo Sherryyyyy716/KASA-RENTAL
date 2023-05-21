@@ -10,25 +10,26 @@ p {
 }
 
 body {
+    background-image:url(./img/index-bg.png) ;
     display: flex;
-    flex-direction: column;
-    background-image: url(./img/banner-bg.png);
-    /* background-image: url(./img/bg.png); */
+    /* background-size: contain; */
     background-repeat: no-repeat;
-    background-size: cotain;
-    background-position: center top;
-    /*cover  */
+    background-position:top left; 
+    flex-direction: column;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
 
 /* 設定header背景後，文字就會不見 */
-/* .nav-banner {
-    background: url(./img/banner-bg.png);
+.nav-banner {
+    height: 20%;
+    width: 100%;
+    height: 1296px;
+    /* background: url(./img/banner-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-} */
+    background-position: center top; */
+}
 
 nav {
     margin: auto;
@@ -53,7 +54,9 @@ header {
     margin: 5px 10px;
 }
 
+/* .nav-list:nth-child(3):hover{
 
+} */
 .nav-list li {
     text-align: center;
 }
@@ -149,12 +152,13 @@ main {
     bottom: -9%;
     z-index: 1;
 }
-
+/* title */
 .title-group {
     width: 33.3%;
     margin-bottom: 30px;
     position: relative;
     font-weight: 600;
+    margin-left: 100px
 }
 
 .div-white {
@@ -174,11 +178,12 @@ main {
 }
 
 .section {
-    margin: 20% 0;
-    padding: 10% 5%;
+    height: 1000px;
+    margin: 5% 0;
+    padding: 16px 5%;
     display: flex;
     flex-direction: column;
-    height: max-content;
+    /* height: max-content; */
 }
 
 .title-ch {
@@ -195,6 +200,9 @@ main {
 
 
 .about .content {
+    margin: 3% 20%;
+    /* padding: 0 10%;
+     margin: auto; */
     font-size: 20px;
     padding-left: 50px;
     line-height: 1.5;
@@ -203,10 +211,10 @@ main {
 /* Spot */
 .section.spot {
     margin: 0;
-    background: url(./img/Spot-line-bg.png);
+    /* background: url(./img/Spot-line-bg.png);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
 }
 
 .taiwain-map {
@@ -225,23 +233,23 @@ main {
 }
 
 .type1 {
-    right: 13%;
-    top: 10%;
+    right: 35%;
+    top: 14%;
 }
 
 .type2 {
-    left: 20%;
+    left: 35%;
     top: 38%;
 }
 
 .type3 {
-    right: 27%;
+    right: 37%;
     bottom: 32%;
 }
 
 .type4 {
-    left: 22%;
-    bottom: 17%;
+    left: 35%;
+    bottom: 21%;
 }
 
 
@@ -325,24 +333,24 @@ main {
 }
 
 .map-area .area1 {
-    top: -18%;
-    right: -9%;
+    top: -15%;
+    right: 19%;
 }
 
 .map-area .area2 {
-    top: 10%;
-    left: 0%;
+    top: 9%;
+    left: 24%;
 }
 
 .map-area .area3 {
-    top: 55%;
-    left: 10%;
+    top: 60%;
+    left: 28%;
 
 }
 
 .area-same.area4 {
     top: 47%;
-    right: 17%;
+    right: 28%;
 }
 
 .area-same.area4 ul {
@@ -357,6 +365,7 @@ main {
 
 /* howToUse */
 .title-group.howToUse {
+    margin-bottom: 30px;
     min-width: 35%;
     margin: auto;
 }
@@ -461,19 +470,20 @@ main {
 
 /* footer */
 .footer {
-    background-image: url(./img/footer-bg.png);
+    /* background-image: url(./img/footer-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center bottom;
+    background-position: center bottom; */
 }
 
 .footer-content {
-    display: flex;
     width: 50%;
     display: flex;
     position: relative;
     left: 20%;
+    top: 30%;
     gap: 5%;
+    font-size: 36px;
 }
 
 .footer-content-text {
@@ -481,13 +491,18 @@ main {
 }
 
 .footer-text {
+    /* height: -webkit-fill-available; */
+    font-size: 20px;
+    margin-top: 28%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 54px;
+    /* gap: 54px; */
 }
 
 .footer-list {
+    height: 300px;
+    align-items: center;
     display: flex;
     gap: 34px;
 }
@@ -497,15 +512,20 @@ main {
 }
 
 .company-info {
-    order: 1;
+    gap: 40px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .dowload-icon {
+    align-self: center;
+    width: fit-content;
     justify-content: flex-end;
     order: -1;
     display: flex;
     gap: 20px;
-
+    height: max-content;
 }
 
 .dowload-icon img {
@@ -514,6 +534,7 @@ main {
 }
 
 footer .copyright {
+    height: 90px;
     line-height: 1.4;
     color: #fff;
     text-align: center;

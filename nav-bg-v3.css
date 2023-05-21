@@ -1,0 +1,26 @@
+.nav-content {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* margin: auto; */
+    /* padding-top: 20px; */
+    border: 1px solid green;
+    width: 40%;
+}
+
+.nav-list {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-evenly;
+}
+
+.nav-list a {
+    display: block;
+    align-items: center;
+    color: #0C4867;
+    margin: 5px 10px;
+    text-align: center;
+}
+
+
