@@ -560,6 +560,8 @@ main {
     margin: auto;
     gap: 40px;
     display: flex;
+    color: black;
+    margin-top: -1%;
 }
 .dowload-icon {
     width: 100%;
