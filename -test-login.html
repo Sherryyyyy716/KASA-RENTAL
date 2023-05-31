@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">會員登入</label>
+        <div class="tab">
+            <div id="login-box">
+                <div class="left">
+                    <h3>登入</h3>
+                    <input type="text" name="email" placeholder="*email" />
+                    <input type="password" name="password" placeholder="*密碼" />
+                    <label><input type="checkbox"><span>記住我</span></label>
+                    <input type="submit" name="signup_submit" value="登入" />
+                </div>
+
+                <div class="right">
+                    <!-- <span class="loginwith">Sign in with<br />social network</span> -->
+
+                    <button class="social-signin facebook">facebook</button>
+                    <button class="social-signin twitter">Twitter</button>
+                    <button class="social-signin google">Google+</button>
+                </div>
+                <div class="or"></div>
+            </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">加入會員</label>
+        <div class="tab">
+            <h3>加入專屬會員</h3>
+            <h5>我們將發送簡訊驗證碼至您的手機內</h5>
+            <div class="pic">
+                <img src="./img/Group 192 (1).png" alt="">
+            </div>
+
+            <span class="input-data">
+                <input type="text" id="register_ac" name="register_ac" value="" maxlength="10" autocomplete="off"
+                    placeholder="*手機" />
+                <button class="social-signin google">下一步</button>
+            </span>
+            <h6>收到簡訊驗證碼後，請依照步驟完成驗證註冊</h6>
+        </div>
+        </label>
+    </div>
+</body>
+
+</html>
