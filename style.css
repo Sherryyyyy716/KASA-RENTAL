@@ -43,12 +43,6 @@
      }
  }
 
- .bg-cloud-big {
-     /* background-image: url(./img/bg-cloud-big.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover; */
- }
 
  /* 其他頁面的nav背景 */
  .nav-bg-2 {
@@ -815,7 +809,7 @@
      display: block;
  }
 
- .tab-area input[type="radio"] {}
+ /* .tab-area input[type="radio"] {} */
 
  /* tab-checked顯示 */
  .tab-area input[type="radio"]:checked+.tab-display {
