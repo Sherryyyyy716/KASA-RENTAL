@@ -10,37 +10,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Noto+Sans+TC:wght@300&display=swap"
-        rel="stylesheet">
-
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <!-- OWL -->
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <title>KASA RENTAL</title>
 </head>
+<!-- <i id="open" class="fa-solid fa-bars"></i>
+<i id="close" class="fa-solid fa-xmark"></i> -->
 
 <body class="indexbg">
+    <header class="nav">
+        <nav>
+            <a href="#" class="toggle-btn" onclick="navToggle()">
+                <i id="open" class="fa-solid fa-bars"></i>
+            </a>
+            </a>
+            <div class="nav-content">
+                <a href="index.html"><img src="./img/logo.png" alt="logo" id="logo"></a>
 
+                <ul class="nav-list">
+                    <li class="nav-list-text"><a class="a-line" href="index.html">關於我們</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="spot.html">據點查詢</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="howToUse.html">租用說明</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="product.html">商品一覽</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="QA.html">Q&A</a></li>
+                    <li class="nav-list-text logIn"><a href="log-in.html"><i class="fa-regular fa-circle-user"></i></a>
+                    </li>
+                </ul>
+
+
+
+
+                <!-- <a href="#" class="close toggle-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </a> -->
+            </div>
+        </nav>
+
+    </header>
     <div class="nav-banner">
-        <header class="nav">
-            <nav>
-                <div class="nav-content">
-                    <a href="index.html"><img src="./img/logo.png" alt="logo" id="logo"></a>
 
-                    <ul class="nav-list">
-                        <li><a href="index.html">關於我們</a></li>
-                        <li><a href="spot.html">據點查詢</a></li>
-                        <li><a href="howToUse.html">租用說明</a></li>
-                        <li><a href="product.html">商品一覽</a></li>
-                        <li><a href="QA.html">Q&A</a></li>
-
-                    </ul>
-
-                    <ul class="nav-list logIn">
-                        <li><a href="log-in.html">登入</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-        </header>
 
         <main>
             <div class="bg-cloud-big">
@@ -48,9 +66,27 @@
                     <div class="slo-1">因應台灣地區多變氣候而生</div>
                     <div class="slo-2">提供人們 便利、即時的服務</div>
                     <div class="slider">
-                        <div class="banner-list">
+                        <!-- OWL -->
+                        <!-- <div class="banner-list owl-carousel owl-theme"> -->
+                        <div class="banner-list-item owl-carousel owl-theme">
+                            <div class="item"> <img id="banner-img" src="./img/banner-img-1.png" alt="">
+                            </div>
+                            <div class="item"> <img id="banner-img" src="./img/banner-img-2.png" alt="">
+                            </div>
+                            <div class="item"> <img id="banner-img" src="./img/banner-img-3.png" alt="">
+                            </div>
+                            <div class="item"> <img id="banner-img" src="./img/banner-img-4.png" alt="">
+                            </div>
+                            <div class="item"><img id="banner-img" src="./img/banner-img-5.png" alt=""> </div>
+                            <div class="item"><img id="banner-img" src="./img/banner-img-6.png" alt="">
+                            </div>
+                            <!-- <div> Your Content </div>
+                            <div> Your Content </div>
+                            <div> Your Content </div>
+                            <div> Your Content </div> -->
+                        </div>
 
-                            <div class="banner-list-item ">
+                        <!-- <div class="banner-list-item ">
                                 <img id="banner-img" src="./img/header-img.png" alt="">
                             </div>
                             <div class="banner-list-item slo-position">
@@ -59,11 +95,11 @@
                             <div class="banner-list-item">
                                 <img id="banner-img" src="./img/header-img.png" alt="">
 
-                            </div>
-                        </div>
+                            </div> -->
                     </div>
-
                 </div>
+
+
                 <div class="section about" id="about">
 
                     <div class="title-group">
@@ -89,6 +125,7 @@
                     </div>
 
                 </div>
+            </div>
         </main>
     </div>
 
@@ -108,8 +145,10 @@
         </div>
 
         <div class="howToUse content">
-            <div class="step-line line1"></div>
+
             <div class="howToUse-item step1">
+                <div class="step-line line1"></div>
+
                 <div class="step-num no1">Step 1</div>
                 <div class="step-title">下載</div>
                 <div class="step-text">
@@ -121,6 +160,7 @@
                 </div>
             </div>
             <div class="howToUse-item step2">
+                <div class="step-line line1"></div>
                 <div class="step-num no2">Step 2</div>
                 <div class="step-title">註冊</div>
                 <p class="step-text">
@@ -131,6 +171,7 @@
                 </div>
             </div>
             <div class="howToUse-item step3">
+                <div class="step-line line1"></div>
                 <div class="step-num no3">Step 3</div>
                 <div class="step-title">掃描</div>
                 <p class="step-text">掃描<br>
@@ -140,6 +181,7 @@
                 </div>
             </div>
             <div class="howToUse-item step4">
+                <div class="step-line line1"></div>
                 <div class="step-num no4">Step 4</div>
                 <div class="step-title">支付</div>
                 <p class="step-text">
@@ -205,6 +247,64 @@
         <div class="copyright">
             COPYRIGHT © 2023 BY KASA RENTAL ALL RIGHTS RESERVED.</div>
     </footer>
-</body>
+    <!-- <i id="open" class="fa-solid fa-bars"></i>
+    <i id="close" class="fa-solid fa-xmark"></i> -->
+
+
+    <!-- OWL -->
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+
+        var owl = $('.owl-carousel');
+
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true
+
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+
+    <script>
+        function navToggle() {
+            let x = document.querySelector(".nav-list");
+            if (x.className === "nav-list") {
+                x.className += " list-wrap";
+
+
+            } else {
+                x.className = "nav-list";
+
+            }
+        }
+
+        let open = document.querySelector("#open");
+        open.addEventListener("click", hide);
+        function hide() {
+            if (open.className === "fa-solid fa-bars") {
+                open.className = "fa-solid fa-xmark";
+
+            } else {
+                open.className = "fa-solid fa-bars";
+            }
+
+        }
+
+    </script>
 
 </html>
