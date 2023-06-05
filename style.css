@@ -604,12 +604,12 @@
      height: 100%;
      border: solid 5px transparent;
      border-radius: 20px;
-     background-image: linear-gradient(#fff, #fff),
+     background-image:
+         linear-gradient(#fff, #fff),
          linear-gradient(to bottom, rgba(0, 175, 236), rgba(106, 225, 233, 0.42));
      background-origin: border-box;
      background-clip: content-box, border-box;
  }
-
 
  .step-num::after {
      top: -33px;
