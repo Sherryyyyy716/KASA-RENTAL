@@ -379,7 +379,7 @@
      text-shadow: 0.1em 0.1em 0.2em #00000036;
      writing-mode: vertical-lr;
      position: absolute;
-     font-size: 2vw;
+     font-size: 30px;
      /* 35px */
      /* 24px */
      z-index: 3;
@@ -451,11 +451,11 @@
      }
 
      .typed-cursor {
-         top: -1.2vw;
+         top: -28px;
          position: relative;
-         right: -1.5px;
+         right: -2px;
          opacity: 1;
-         font-size: 2.2vw;
+         font-size: 32px;
          -webkit-animation: blink 0.7s infinite;
          -moz-animation: blink 0.7s infinite;
          animation: blink 1.3s infinite;
@@ -1075,6 +1075,7 @@
      /* width: 50%; */
  }
 
+
  @media screen and (max-width:1920px) {
      /* .info-icon {
         flex-direction: column;
@@ -1247,6 +1248,12 @@
  .company-info div {
      width: max-content;
      /* text-align: center; */
+ }
+
+ @media screen and (max-width:768px) {
+     .footer-text {
+         display: none;
+     }
  }
 
 
