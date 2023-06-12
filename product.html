@@ -14,6 +14,10 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- zoom in -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.min.js"></script>
     <title>KASA RENTAL</title>
 </head>
 
@@ -54,20 +58,30 @@
     <div class="product-list">
         <div class="product-content type1">
             <div class="product-img-slide">
-                <div class="product-img">
-                    <img src="./img/product/雨傘/直傘/直傘-2.png" alt="">
+                <a href="" onclick="plusSlides(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <a href="" onclick="plusSlides(1)">
+                    <i class="fa-solid fa-chevron-right" onclick="plusSlides(1)"></i>
+                </a>
+                <div class="product-img type1">
+                    <img data-image="ArmyGreen" data-scale="2" src="./img/product/雨傘/直傘/直傘-1.png" alt="">
+                    <img data-image="red" src="./img/product/雨傘/直傘/直傘-2.png" class="active" alt="">
+                    <img data-image="Navy" src="./img/product/雨傘/直傘/直傘-3.png" alt="">
+                    <img data-image="black" src="./img/product/雨傘/直傘/直傘-4.png" alt="">
+                    <img data-image="yellow" src="./img/product/雨傘/直傘/直傘-5.png" alt="">
                 </div>
             </div>
 
 
             <div class="text">
                 <div class="product-title">直傘</div>
-                <div class="product-color-list">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="product-color-list type1">
+                    <div data-image="red" class="color-red"></div>
+                    <div data-image="ArmyGreen" class="color-ArmyGreen"></div>
+                    <div data-image="Navy" class="color-Navy"></div>
+                    <div data-image="black" class="color-black"></div>
+                    <div data-image="yellow" class="color-yellow"></div>
                 </div>
                 <div class="product-detail">
                     雨傘長度：100cm<br>
@@ -75,20 +89,31 @@
                     遮蔽直徑：135cm</div>
             </div>
         </div>
-        <div class="product-content  type2">
+        <div class="product-content type3">
             <div class="product-img-slide">
-                <div class="product-img">
-                    <img src="./img/product/雨傘/折傘/折傘-2.png" alt="">
+                <a href="" onclick="plusSlides(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <a href="" onclick="plusSlides(1)">
+                    <i class="fa-solid fa-chevron-right" onclick="plusSlides(1)"></i>
+                </a>
+                <div class="product-img type2">
+                    <img data-image="black" data-scale="2" src="./img/product/雨傘/折傘/折傘-1.png" alt="">
+                    <img data-image="Navy" src="./img/product/雨傘/折傘/折傘-2.png" class="active" alt="">
+                    <img data-image="ArmyGreen" src="./img/product/雨傘/折傘/折傘-3.png" alt="">
+                    <img data-image="yellow" src="./img/product/雨傘/折傘/折傘-4.png" alt="">
+                    <img data-image="purple" src="./img/product/雨傘/折傘/折傘-5.png" alt="">
+
                 </div>
             </div>
             <div class="text">
                 <div class="product-title">折傘</div>
-                <div class="product-color-list">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="product-color-list type2">
+                    <div data-image="black" class="color-black"></div>
+                    <div data-image="Navy" class="color-Navy"></div>
+                    <div data-image="ArmyGreen" class="color-ArmyGreen"></div>
+                    <div data-image="yellow" class="color-yellow"></div>
+                    <div data-image="purple" class="color-purple"></div>
                 </div>
                 <div class="product-detail">
                     長度：50cm <br>
@@ -99,20 +124,27 @@
         </div>
         <div class="product-content  type3">
             <div class="product-img-slide">
-                <div class="product-img">
-                    <img src="img/product/雨衣/雨衣-2.png" alt="">
+                <a href="" onclick="plusSlides(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <a href="" onclick="plusSlides(1)">
+                    <i class="fa-solid fa-chevron-right" onclick="plusSlides(1)"></i>
+                </a>
+                <div class="product-img type3">
+                    <img data-image="ArmyGreen" data-scale="2" src="img/product/雨衣/雨衣-1.png" class="" alt="">
+                    <img data-image="Navy" src="img/product/雨衣/雨衣-2.png" class="active" alt="">
+
+                    <img data-image="pink" src="img/product/雨衣/雨衣-3.png" class="" alt="">
                 </div>
             </div>
 
 
             <div class="text">
                 <div class="product-title">雨衣</div>
-                <div class="product-color-list">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="product-color-list type3">
+                    <div data-image="ArmyGreen" class="color-ArmyGreen"></div>
+                    <div data-image="Navy" class="color-Navy"></div>
+                    <div data-image="pink" class="color-pink"></div>
                 </div>
                 <div class="product-detail">衣長：115cm（不含帽高）<br>
                     胸寬／袖長：115cm／86cm <br>
@@ -121,20 +153,25 @@
         </div>
         <div class="product-content  type4">
             <div class="product-img-slide">
-                <div class="product-img">
-                    <img src="./img/product/雨鞋/雨靴-F-2.png" alt="">
+                <a href="" onclick="plusSlides(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <a href="" onclick="plusSlides(1)">
+                    <i class="fa-solid fa-chevron-right" onclick="plusSlides(1)"></i>
+                </a>
+                <div class="product-img type4">
+                    <img data-image="brown" data-scale="2" src="./img/product/雨鞋/雨靴-F-1.png" alt="">
+                    <img data-image="black" src="./img/product/雨鞋/雨靴-F-2.png" class="active" alt="">
+
                 </div>
             </div>
 
 
             <div class="text">
-                <div class="product-title">雨靴(女)</div>
-                <div class="product-color-list">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="product-title">雨靴</div>
+                <div class="product-color-list type4">
+                    <div data-image="brown" class="color-brown"></div>
+                    <div data-image="black" class="color-black"></div>
                 </div>
                 <div class="product-detail">尺寸：23.5cm／24.5cm／25.5cm <br>
                     重量：400g </div>
@@ -142,18 +179,27 @@
         </div>
         <div class="product-content  type5">
             <div class="product-img-slide">
-                <div class="product-img">
-                    <img src="./img/product/雨批/雨批-2.png" alt="">
+                <a href="" onclick="plusSlides(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <a href="" onclick="plusSlides(1)">
+                    <i class="fa-solid fa-chevron-right" onclick="plusSlides(1)"></i>
+                </a>
+                <div class="product-img type5">
+                    <img data-image="Beige" data-scale="2" src="./img/product/雨批/雨批-1.png" alt="">
+                    <img data-scale="2" data-image="black" src="./img/product/雨批/雨批-2.png" class="active" alt="">
+                    <img data-image="ArmyGreen" src="./img/product/雨批/雨批-3.png" alt="">
+
                 </div>
             </div>
 
 
             <div class="text">
                 <div class="product-title">雨批</div>
-                <div class="product-color-list">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="product-color-list type5">
+                    <div data-image="Beige" class="color-Beige"></div>
+                    <div data-image="black" class="color-black"></div>
+                    <div data-image="ArmyGreen" class="color-ArmyGreen"></div>
                     <div></div>
                     <div></div>
                 </div>
@@ -213,6 +259,118 @@
         <div class="copyright">
             COPYRIGHT © 2023 BY KASA RENTAL ALL RIGHTS RESERVED.</div>
     </footer>
+    <script>
+
+        $(document).ready(function () {
+            // $('.product-img').zoom();
+
+
+            $('.product-img')
+                .on('mouseover', function () {
+                    $(this).children('img').css({ 'transform': 'scale(' + $(this).children('img').attr('data-scale') + ')' });
+                })
+
+                .on('mouseout', function () {
+                    $(this).children('img').css({ 'transform': 'scale(1)' });
+                })
+                .on('mousemove', function (e) {
+                    $(this).children('img').css({ 'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + '%' });
+                })
+        });
+
+        $(document).ready(function () {
+            $('.fa-chevron-right').on('click', function () {
+
+            })
+
+            var images = [
+                'https://wpcstore.itembox.design/product/013/000000001337/000000001337-03-l.jpg?t=20230606101948',
+                'https://wpcstore.itembox.design/product/013/000000001337/000000001337-06-l.jpg?t=20230606101948',
+                'https://wpcstore.itembox.design/product/013/000000001337/000000001337-15-l.jpg?t=20230606101948',
+                'https://wpcstore.itembox.design/product/013/000000001337/000000001337-21-l.jpg?t=20230606101948',
+                'https://wpcstore.itembox.design/product/013/000000001337/000000001337-27-l.jpg?t=20230606101948',
+            ];
+
+
+            function nextImage() {
+                $('#image-number').html('Image number ' + currentImage);
+                $('#the-image').attr('src', images[currentImage]);
+                currentImage = currentImage + 1;
+
+                if (currentImage >= images.length) {
+                    currentImage = 0;
+                }
+
+            }
+
+
+        });
+        $(document).ready(function () {
+            $('.product-color-list.type1 div').on('click', function () {
+                let color = $(this).attr('data-image');
+
+                $('.product-img.type1 .active').removeClass('active');
+                $('.product-img.type1 img[data-image = ' + color + ']').addClass('active');
+                $(this).addClass('active');
+            });
+            $('.product-color-list.type2 div').on('click', function () {
+                let color = $(this).attr('data-image');
+
+                $('.product-img.type2 .active').removeClass('active');
+                $('.product-img.type2 img[data-image = ' + color + ']').addClass('active');
+                $(this).addClass('active');
+            });
+            $('.product-color-list.type3 div').on('click', function () {
+                let color = $(this).attr('data-image');
+
+                $('.product-img.type3 .active').removeClass('active');
+                $('.product-img.type3 img[data-image = ' + color + ']').addClass('active');
+                $(this).addClass('active');
+            });
+            $('.product-color-list.type4 div').on('click', function () {
+                let color = $(this).attr('data-image');
+
+                $('.product-img.type4 .active').removeClass('active');
+                $('.product-img.type4 img[data-image = ' + color + ']').addClass('active');
+                $(this).addClass('active');
+            });
+            $('.product-color-list.type5 div').on('click', function () {
+                let color = $(this).attr('data-image');
+
+                $('.product-img.type5 .active').removeClass('active');
+                $('.product-img.type5 img[data-image = ' + color + ']').addClass('active');
+                $(this).addClass('active');
+            });
+        });
+
+
+
+    </script>
+    <!-- <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.querySelector(".product-img");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.opcity = "1";
+            console.log(slides.length);
+        }
+    </script> -->
 </body>
 
 </html>
