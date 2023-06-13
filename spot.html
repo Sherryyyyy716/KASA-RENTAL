@@ -224,14 +224,17 @@
             }
 
         }
-        let screenW = $(window).width()
-        if (screenW < 1020)
-            $(document).ready(function () {
-                $(".area-same .area-title").click(function () {
-                    // $('.QA-content-A').slideToggle();
-                    $(this).next('.area-content').toggle(800);
+        $(document).ready(function () {
+            let screenW = $(window).width()
+            if (screenW < 1020)
+                $(document).ready(function () {
+                    $(".area-same .area-title").click(function () {
+                        // $('.QA-content-A').slideToggle();
+                        $(this).next('.area-content').toggle(800);
+                    });
                 });
-            });
+        });
+
     </script>
 
 
