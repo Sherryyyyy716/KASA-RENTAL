@@ -638,6 +638,8 @@
  }
 
  /* Spot */
+
+
  .section.spot {
      height: 750px;
      padding: 0;
@@ -778,6 +780,8 @@
      gap: 15px 15px;
  }
 
+
+
  .area-same ul li {
      width: 80px;
      padding: 10px;
@@ -817,14 +821,15 @@
      left: 100%;
  }
 
- @media screen and(min-width:280px) {
-     .area-same {
+ @media screen and(max-width:1020px) {
+     /* .area-same {
          position: relative;
-     }
+     } */
 
      .area-same .area-content {
+         background-color: #006CA2;
          position: relative;
-         display: none;
+         opacity: 0
      }
  }
 
@@ -1654,6 +1659,46 @@
      margin: auto;
  }
 
+ .QA-title button:hover {
+     border: none;
+     background-color: #0C4867;
+     color: #fff;
+ }
+
+ .QA-title a {
+     color: #6cbdef;
+ }
+
+ @media screen and (max-width:900px) {
+
+     .login-area,
+     .phone-area {
+         display: block;
+     }
+
+     .login-left {
+         border: none;
+     }
+
+     .login-forgot a {
+         text-align: center;
+     }
+
+     .tab-area-left-container {
+         width: fit-content;
+     }
+
+     .login-right div:nth-child(2) {
+         width: fit-content;
+         margin: auto;
+     }
+
+     .login-right {
+         margin-top: 10px;
+         /* outline: solid; */
+     }
+ }
+
  /* user icon */
 
 
@@ -1702,30 +1747,11 @@
      gap: 20px;
  }
 
- @media screen and(max-width:1020px) {
-     .QA-title button {
-         /* width: 400px; */
-         width: 50%;
-         /* margin: 20px; */
-     }
-
-     .section.QA .QA-title {
-         width: 50%;
-         align-items: center;
-     }
- }
 
 
 
- .QA-title button:hover {
-     border: none;
-     background-color: #0C4867;
-     color: #fff;
- }
 
- .QA-title a {
-     color: #6cbdef;
- }
+
 
  /* .QA-title a:active,
  {
@@ -1790,7 +1816,7 @@
      /* padding-left: 20px; */
      display: flex;
      flex-direction: column;
-     max-width: 80%;
+     min-width: 80%;
      margin: auto;
      justify-content: space-between;
  }
@@ -1838,4 +1864,23 @@
      position: absolute;
      top: 0;
      transition: all .3s;
+ }
+
+ @media screen and(max-width:1020px) {
+     .QA-title button {
+         /* width: 400px; */
+         width: 50%;
+         /* margin: 20px; */
+     }
+
+     .section.QA .QA-title {
+         width: 50%;
+         align-items: center;
+     }
+ }
+
+ @media screen and(max-width:950px) {
+     .QA-title button {
+         width: 47%;
+     }
  }
