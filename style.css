@@ -286,6 +286,10 @@
      left: -25%;
  }
 
+ .owl-theme .owl-dots .owl-dot span {
+     background: #006CA2;
+ }
+
  .banner-list-item .item {
      /* width: 100%; */
      display: flex;
@@ -379,6 +383,7 @@
      font-family: 'Inter', sans-serif;
      text-shadow: 0.1em 0.1em 0.2em #00000036;
      writing-mode: vertical-lr;
+     text-shadow: 0.1em 0.1em 0.2em #015b89;
      position: absolute;
      /* font-size: 30px; */
      /* 35px */
@@ -392,21 +397,61 @@
 
  }
 
+ .slo-2 {
+     top: 8%;
+     right: 13%;
+ }
+
+ .slo-1 {
+     top: 5%;
+     right: 20%;
+ }
+
+ .slo-1,
+ .slo-2 {
+     font-size: 12px;
+     /* writing-mode: vertical-lr; */
+     /* initial */
+     text-shadow: 0.1em 0.1em 0.2em #015b89;
+ }
+
+ .typed-cursor {
+     top: -28px;
+     position: relative;
+     right: -2px;
+     opacity: 1;
+     font-size: 32px;
+     -webkit-animation: blink 0.7s infinite;
+     -moz-animation: blink 0.7s infinite;
+     animation: blink 1.3s infinite;
+     writing-mode: initial;
+ }
+
+ /* 
+ .slo-1,
+ .slo-2 {
+     font-size: 12px;
+     writing-mode: lr;
+     /* initial */
+ /* text-shadow: 0.1em 0.1em 0.2em #015b89; */
+ /* }*/
+
+ .typed-cursor {
+     top: -28px;
+     position: relative;
+     right: -2px;
+     opacity: 1;
+     font-size: 32px;
+     -webkit-animation: blink 0.7s infinite;
+     -moz-animation: blink 0.7s infinite;
+     animation: blink 1.3s infinite;
+     writing-mode: initial;
+ }
 
 
 
 
- @media screen and (min-width:280px) {
-
-     .slo-1,
-     .slo-2 {
-         font-size: 14px;
-     }
-
-     .little-cloud {
-         width: 20vw;
-     }
-
+ @media screen and (max-width:1920px) {
      @keyframes typing {
          from {
              width: 0
@@ -414,10 +459,10 @@
      }
 
      /* @keyframes caret {
-         50% {
-             border-right-color: #ffffff;
-         }
-     } */
+        50% {
+            border-right-color: #ffffff;
+        }
+    } */
 
      @keyframes blink {
          0% {
@@ -433,43 +478,10 @@
          }
      }
 
-     @media screen and (min-width:500px) {
-
-         .slo-1,
-         .slo-2 {
-             font-size: 18px;
-         }
-     }
-
-     @media screen and (min-width:768px) {
-
-         .slo-1,
-         .slo-2 {
-             font-size: 28px;
-         }
-     }
 
      .slo-1,
      .slo-2 {
-         /* font-size: 12px; */
-         writing-mode: vertical-rl;
-         /* initial */
-         text-shadow: 0.1em 0.1em 0.2em #015b89;
-         /* 打字機動畫 */
-         /* font-size: 22px;
-         width: 12em;
-         white-space: nowrap;
-         overflow: hidden;
-         animation: typing 5s steps(12),
-             caret .5s steps(1) 10;
-         border-right: 1px solid transparent; */
-
-         /* width: 13em;
-         border-right: .05em solid;
-         overflow: hidden;
-         white-space: nowrap;
-         animation: typing 3s steps(13),
-             caret 1s steps(1) infinite; */
+         font-size: 24px;
      }
 
      .typed-cursor {
@@ -484,32 +496,62 @@
          writing-mode: initial;
      }
 
+
+ }
+
+ @media screen and (max-width:768px) {
+
+     .slo-1,
      .slo-2 {
-         top: 8%;
-         right: 13%;
+         font-size: 22px;
+     }
+ }
+
+ @media screen and (max-width:500px) {
+
+     .slo-1,
+     .slo-2 {
+         font-size: 18px;
+     }
+ }
+
+ @media screen and (max-width:430px) {
+
+     .slo-1,
+     .slo-2 {
+         font-size: 14px;
+         writing-mode: initial;
+         /* 打字機動畫 */
+         width: 182px;
+         white-space: nowrap;
+         overflow: hidden;
+         animation: typing 5s steps(13),
+             caret .5s steps(1) 10;
+         border-right: 1px solid transparent;
+     }
+
+     .little-cloud {
+         width: 20vw;
      }
 
      .slo-1 {
-         top: 5%;
+         top: 60%;
+         right: 14%;
+     }
+
+     .slo-2 {
          right: 20%;
+         top: 70%;
      }
- }
 
- @media screen and (min-width:1000px) {
      .typed-cursor {
-         top: -28px;
-         position: relative;
-         right: -2px;
-         opacity: 1;
-         font-size: 32px;
-         -webkit-animation: blink 0.7s infinite;
-         -moz-animation: blink 0.7s infinite;
-         animation: blink 1.3s infinite;
-         writing-mode: initial;
+         display: none;
      }
 
-
  }
+
+
+
 
  /* @media screen and (min-width:768px) {
 
@@ -625,7 +667,7 @@
 
  @media screen and (max-width:768px) {
      .title {
-         font-size: 16px;
+         font-size: 20px;
      }
 
      .section.about p {
@@ -821,16 +863,69 @@
      left: 100%;
  }
 
- @media screen and(max-width:1020px) {
+ @media screen and (max-width:1020px) {
+
      /* .area-same {
          position: relative;
      } */
+     .map-area .map-area-img .line::after {
+         display: none;
+     }
 
      .area-same .area-content {
-         background-color: #006CA2;
-         position: relative;
          opacity: 0
      }
+
+     .map-area .area1 {
+         top: 5%;
+         left: 50%;
+     }
+
+     .map-area .area2 {
+         top: 34%;
+         right: 57%;
+     }
+
+     .area-same.area4 {
+         top: 48%;
+         left: 50%;
+     }
+
+     .map-area .area3 {
+         right: 50%;
+         top: 72%;
+     }
+
+     .line {
+         display: none;
+         width: 100px;
+     }
+
+     .line1 {
+         top: 9%;
+         left: 74%;
+     }
+
+     .area-same .area-title {
+         padding-left: 0;
+         width: 200px;
+         position: relative;
+     }
+
+     .area-title::after {
+         right: 10%;
+         top: 50%;
+         content: '▼';
+         font-size: 16px;
+         position: absolute;
+         width: 17px;
+         height: 17px;
+         border-radius: 50%;
+         transform-origin: center;
+         transform: translate(-50%, -50%);
+     }
+
+     /* .map-area .map-area-img .line::after{} */
  }
 
  /* howToUse */
@@ -1548,6 +1643,7 @@
      display: flex;
      margin: auto;
      padding: 5% 15%;
+     /* padding: 10%; */
      border-radius: 10px;
  }
 
@@ -1572,7 +1668,8 @@
  }
 
  .form-text {
-     margin: 20% 0 5%;
+     /* margin: 20% 0 5%; */
+     margin-bottom: 40px;
  }
 
  .form-text.input input:focus {
@@ -1601,6 +1698,10 @@
      background-color: #0c4967;
  }
 
+ #login_ac {
+     margin-top: 40px;
+ }
+
  .signup {
      margin-top: 20px;
      background-color: #FF3A1E;
@@ -1615,7 +1716,7 @@
  }
 
  .tab input {
-     width: 300px;
+     width: 400px;
      height: 46px;
      font-size: 20px;
      font-family: "Roboto", sans-serif;
@@ -1624,6 +1725,9 @@
      padding: 5px 10px;
  }
 
+ .form-text #login_btn {
+     width: 50%;
+ }
 
  #facebook-signup-btn {
      margin: auto;
@@ -1639,16 +1743,39 @@
      cursor: pointer;
  }
 
+
+ .login-right.tab-area-right fieldset {
+     width: 120%;
+     border: none;
+     border-top: 1px solid #fff;
+     margin: 25px auto;
+     margin-left: -10%;
+     margin-bottom: 40px;
+ }
+
+ .login-right.tab-area-right fieldset legend {
+     text-align: center;
+     color: #fff;
+     padding: 0 5px;
+     margin: 0 auto;
+ }
+
  .login-right button img {
      margin-right: -24px;
  }
 
- .login-right div:nth-child(2) {
-     margin-left: 20px;
- }
 
  .login-right button {
      border: none;
+ }
+
+ .login-forgot {
+     font-size: 14px;
+     display: flex;
+     justify-content: end;
+     margin-top: -20px;
+     margin-left: 55%;
+     gap: 10px;
  }
 
  .login-forgot a {
@@ -1656,6 +1783,7 @@
  }
 
  .login-right {
+     padding-right: 10%;
      margin: auto;
  }
 
@@ -1695,6 +1823,7 @@
 
      .login-right {
          margin-top: 10px;
+         padding-right: 0;
          /* outline: solid; */
      }
  }
@@ -1810,7 +1939,7 @@
  }
 
  .QA-content-Q {
-     /* width: 500px; */
+     width: 500px;
      /* margin: auto; */
      padding: 10px 0 10px 20px;
      /* padding-left: 20px; */
@@ -1866,21 +1995,22 @@
      transition: all .3s;
  }
 
- @media screen and(max-width:1020px) {
-     .QA-title button {
-         /* width: 400px; */
-         width: 50%;
-         /* margin: 20px; */
-     }
-
+ @media screen and (max-width:1020px) {
      .section.QA .QA-title {
          width: 50%;
          align-items: center;
      }
  }
 
- @media screen and(max-width:950px) {
+ @media screen and (max-width:950px) {
      .QA-title button {
          width: 47%;
+     }
+ }
+
+ @media screen and (max-width:768px) {
+     .QA-title button {
+         width: 100%;
+         font-size: 16px;
      }
  }
