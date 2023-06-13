@@ -113,6 +113,7 @@
      margin-left: 50px;
      font-size: 20px;
      justify-content: space-evenly;
+     flex-wrap: wrap;
  }
 
  .nav-list a {
@@ -379,7 +380,7 @@
      text-shadow: 0.1em 0.1em 0.2em #00000036;
      writing-mode: vertical-lr;
      position: absolute;
-     font-size: 30px;
+     /* font-size: 30px; */
      /* 35px */
      /* 24px */
      z-index: 3;
@@ -396,6 +397,12 @@
 
 
  @media screen and (min-width:280px) {
+
+     .slo-1,
+     .slo-2 {
+         font-size: 14px;
+     }
+
      .little-cloud {
          width: 20vw;
      }
@@ -426,6 +433,21 @@
          }
      }
 
+     @media screen and (min-width:500px) {
+
+         .slo-1,
+         .slo-2 {
+             font-size: 18px;
+         }
+     }
+
+     @media screen and (min-width:768px) {
+
+         .slo-1,
+         .slo-2 {
+             font-size: 28px;
+         }
+     }
 
      .slo-1,
      .slo-2 {
@@ -463,14 +485,30 @@
      }
 
      .slo-2 {
-         top: 24%;
-         right: 15%;
+         top: 8%;
+         right: 13%;
      }
 
      .slo-1 {
-         top: 10%;
+         top: 5%;
          right: 20%;
      }
+ }
+
+ @media screen and (min-width:1000px) {
+     .typed-cursor {
+         top: -28px;
+         position: relative;
+         right: -2px;
+         opacity: 1;
+         font-size: 32px;
+         -webkit-animation: blink 0.7s infinite;
+         -moz-animation: blink 0.7s infinite;
+         animation: blink 1.3s infinite;
+         writing-mode: initial;
+     }
+
+
  }
 
  /* @media screen and (min-width:768px) {
@@ -520,7 +558,8 @@
 
  /* title */
  .title-group {
-     margin: 5% auto 5% auto;
+     margin: 5% auto;
+
      position: relative;
      font-weight: 600;
  }
@@ -776,6 +815,17 @@
  .map-area #area4 {
      top: 40%;
      left: 100%;
+ }
+
+ @media screen and(min-width:280px) {
+     .area-same {
+         position: relative;
+     }
+
+     .area-same .area-content {
+         position: relative;
+         display: none;
+     }
  }
 
  /* howToUse */
@@ -1135,6 +1185,10 @@
  }
 
  @media screen and (max-width:600px) {
+     .footer-content {
+         font-size: 14px;
+     }
+
      .dowload-icon img {
          width: 70px;
      }
@@ -1284,6 +1338,7 @@
  }
 
  .product-content {
+     margin-bottom: 30px;
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -1305,7 +1360,11 @@
 
  .product-content .text .product-title,
  .product-color-list {
+     color: #006CA2;
+     font-weight: 600;
      text-align: center;
+     font-size: 20px;
+
  }
 
  /* .product-content:nth-child(2n+1) .text {
@@ -1439,12 +1498,22 @@
  }
 
  .product-content .text .product-detail {
-     font-size: 18px;
-     line-height: 1.5;
+     font-size: 16px;
+     line-height: 1.8;
      text-align: left;
-     font-size: 18px;
  }
 
+ @media screen and (max-width:768px) {
+
+     .product-content .text .product-title,
+     .product-color-list {
+         font-size: 16px;
+     }
+
+     .product-content .text .product-detail {
+         font-size: 12px;
+     }
+ }
 
  /* login */
  /* area-container */
@@ -1590,12 +1659,18 @@
 
  /* QA */
  .section.QA {
+     width: 80%;
      height: fit-content;
-     margin: 0;
-     padding: 0 5% 5% 15%;
+     margin: auto;
+     margin-top: -6%;
+     /* padding: 0 5% 5% 15%; */
      display: flex;
      flex-direction: column;
  }
+
+ /* .section.QA .title-group {
+     margin: 5% auto -2%;
+ } */
 
  .section.QA>div {
      /* outline: solid red; */
@@ -1605,24 +1680,71 @@
      justify-content: center;
  }
 
- .section.QA .QA-title {
-     gap: 200px;
- }
+
 
  .QA-title button {
      width: 150px;
      font-weight: 600;
-     padding: 1% 3%;
-     font-size: 14px;
+     padding: 5px 20px;
+     font-size: 20px;
      border: #0C4867;
      border-radius: 20px;
-     color: #0C4867;
+
  }
+
+ .section.QA .QA-title {
+     /* width: 60%; */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     margin: auto;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+
+ @media screen and(max-width:1020px) {
+     .QA-title button {
+         /* width: 400px; */
+         width: 50%;
+         /* margin: 20px; */
+     }
+
+     .section.QA .QA-title {
+         width: 50%;
+         align-items: center;
+     }
+ }
+
+
 
  .QA-title button:hover {
      border: none;
      background-color: #0C4867;
      color: #fff;
+ }
+
+ .QA-title a {
+     color: #6cbdef;
+ }
+
+ /* .QA-title a:active,
+ {
+ color: #fff;
+ } */
+
+ /* .QA-title a:hover {
+     color: #fff;
+ } */
+
+
+
+ .QA-text-title {
+     color: #666;
+     font-size: 24px;
+     font-weight: 700;
+     margin-top: 20px;
+     /* margin: 20px auto; */
+
  }
 
  .section.QA .QA-content {
@@ -1634,22 +1756,41 @@
  }
 
  .QA-sub-title>div {
+     font-weight: 600;
      margin: 0 20px;
+     color: #0C4867;
  }
 
- .QA-content-Q {
+ .QA-sub-title>div:hover {
+
+     /* color: #FF3A1E; */
+     position: relative;
+     top: -5px;
+     transform: translateY(-1px);
+
+ }
+
+ .QA-content-Q div:first-child {
+     display: flex;
+     justify-content: space-between;
      background: #006CA2;
      color: #FFFF;
      font-weight: 600;
+     position: relative;
+     border-radius: 10px;
+     padding: 0 10px;
+     padding: 2px 12px;
+     align-items: center;
  }
 
- .QA-content-Q,
- .QA-content-A {
+ .QA-content-Q {
+     /* width: 500px; */
+     /* margin: auto; */
      padding: 10px 0 10px 20px;
      /* padding-left: 20px; */
      display: flex;
-     border-radius: 10px;
-     max-width: 50%;
+     flex-direction: column;
+     max-width: 80%;
      margin: auto;
      justify-content: space-between;
  }
@@ -1664,19 +1805,37 @@
      cursor: pointer;
  }
 
- .QA-content-A {
+ .QA-content-Q .QA-content-A {
+     text-align: left;
+     padding: 10px;
      border: solid;
      border-color: #006CA2;
      margin-top: 20px;
      display: none;
-
+     background: #FFFF;
+     border: solid;
+     border-radius: 10px;
+     color: #006CA2;
+     margin-top: 20px;
  }
 
- .QA-content-1 {
-     margin-bottom: 50px;
- }
-
- .QA-sub-title>div:hover {
+ .QA-content a {
+     color: #006CA2;
+     text-decoration: none;
      font-weight: 600;
-     color: #0C4867;
+ }
+
+ .toggle-button {
+     cursor: pointer;
+ }
+
+ .toggle-button::before {
+     border: 0;
+     background-color: brown;
+     content: "";
+     height: 2px;
+     right: 10px;
+     position: absolute;
+     top: 0;
+     transition: all .3s;
  }

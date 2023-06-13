@@ -10,10 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Noto+Sans+TC:wght@300&display=swap"
-        rel="stylesheet">
-
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- new -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+    <!-- OWL -->
+    <!-- <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css"> -->
+
     <title>KASA RENTAL</title>
 </head>
 
@@ -21,25 +38,24 @@
 
     <header class="nav nav-bg-2">
         <nav>
+            <a href="#" class="toggle-btn" onclick="navToggle()">
+                <i id="open" class="fa-solid fa-bars"></i>
+            </a>
             <div class="nav-content">
-                <!-- <div class="logo-area"></div> -->
-
                 <a href="index.html"><img src="./img/logo.png" alt="logo" id="logo"></a>
 
                 <ul class="nav-list">
-                    <li><a href="index.html">關於我們</a></li>
-                    <li><a href="spot.html">據點查詢</a></li>
-                    <li><a href="howToUse.html">租用說明</a></li>
-                    <li><a href="product.html">商品一覽</a></li>
-                    <li><a href="QA.html">Q&A</a></li>
-
-                </ul>
-
-                <ul class="nav-list logIn">
-                    <li><a href="log-in.html">登入</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="index.html#about">關於我們</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="spot.html">據點查詢</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="index.html#howToUse">租用說明</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="product.html">商品一覽</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="QA.html">Q&A</a></li>
+                    <li class="nav-list-text logIn"><a href="log-in.html"><i class="fa-regular fa-circle-user"></i></a>
+                    </li>
                 </ul>
             </div>
         </nav>
+
 
     </header>
 
@@ -53,60 +69,109 @@
     </div>
     <div class="section QA">
         <div class="QA-title">
-            <button class="QA-title-1">用戶</button>
-            <button class="QA-title-2">商戶</button>
-        </div>
-        <div class="QA-sub-title">
-            <div class="QA-sub-title1">常見問題</div>
-            <div class="QA-sub-title2">使用問題</div>
-            <div class="QA-sub-title3">支付方式</div>
-            <div class="QA-sub-title4">使用方法</div>
+            <!-- <button class="QA-title-1">用戶</button>
+            <button class="QA-title-2">商戶</button> -->
+
+            <!-- <div class="QA-sub-title" id="QA-sub-title"> -->
+            <button><a href="#Q1" class="QA-sub-title2">使用方法</a></button>
+            <button class="QA-sub-title3"> <a href="#Q2"> 使用問題</a> </button>
+            <button class="QA-sub-title4"><a href="#Q3">支付方式</a> </button>
+            <button><a href="#Q4" class="QA-sub-title2">其他</a></button>
+            <!-- <button class="QA-sub-title4"> <a href="#Q4">其他</a> </button> -->
         </div>
         <div class="QA-content">
-            <div class="QA-content-1">
-                <div class="QA-content-Q">Q &nbsp;租借雨傘的流程？
-                    <div class="add">+</div>
-                </div>
-                <div class="hide">-</div>
-                <div class="QA-content-A">
-                    詳見 &nbsp; 租用說明。
-                </div>
-            </div>
-            <div class="QA-content-1">
-                <div class="QA-content-Q">Q &nbsp;租借雨傘的費用是多少？
-                    <div class="add">+</div>
-                </div>
-                <div class="hide">-</div>
-                <div class="QA-content-A">
-                    詳見 &nbsp;
-                    <a href="howToUse.html">租用說明</a>
+            <div class="QA-text-title">使用方法</div>
+            <div class="QA-content-1" id="Q1">
+                <div class="QA-content-Q">
+                    <div> Q &nbsp;租借雨傘的流程？
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        詳見 &nbsp;<a href="index.html#howToUse">租用說明。</a>
+                    </div>
                 </div>
             </div>
             <div class="QA-content-1">
-                <div class="QA-content-Q">Q &nbsp;雨傘的尺寸和款式有哪些選擇？
-                    <div class="add">+</div>
+
+                <div class="QA-content-Q">
+                    <div> Q &nbsp;租借雨傘的費用是多少？
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        30元/小時
+                    </div>
                 </div>
-                <div class="hide">-</div>
-                <div class="QA-content-A">
-                    詳見 &nbsp; 租用說明。
+            </div>
+            <div class="QA-content-1" id="Q2">
+                <div class="QA-text-title">使用問題</div>
+                <div class="QA-content-Q">
+                    <div>Q &nbsp;如果我丟了傘怎麼辦？
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        如果您丟失了一把雨傘，您將被收取每日滯納金，直到找到雨傘，或達到註冊時計劃中指定的最高收費金額。
+                    </div>
                 </div>
             </div>
             <div class="QA-content-1">
-                <div class="QA-content-Q">Q &nbsp;雨傘的租借時間和歸還時間是怎麼規定的？
-                    <div class="add">+</div>
-                </div>
-                <div class="hide">-</div>
-                <div class="QA-content-A">
-                    詳見 &nbsp; 租用說明。
+                <div class="QA-content-Q">
+                    <div> Q &nbsp;如果我的雨傘壞了怎麼辦？
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        您只需將雨傘退回任何雨傘租賃亭，並聯繫我們的支持人員報告它已損壞，我們將免費將其從系統中移除。我們回收破損的雨傘。
+                    </div>
                 </div>
             </div>
             <div class="QA-content-1">
-                <div class="QA-content-Q">Q &nbsp;如何聯繫客服人員?
-                    <div class="add">+</div>
+                <div class="QA-content-Q">
+                    <div> Q &nbsp;如果我想歸還雨傘但售貨亭已滿怎麼辦？
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        有現場工作人員來平衡售貨亭的雨傘負載，以避免出現無傘可租，也沒有空位歸還的情況。此外，您還可以在多個方便的地點歸還雨傘，這樣您就可以找到附近的另一個雨傘租賃亭。但是，如果您無法訪問其他信息亭，您可以聯繫我們的客戶服務，我們很樂意免費延長您的使用時間
+                        24 小時。
+                    </div>
                 </div>
-                <div class="hide">-</div>
-                <div class="QA-content-A">
-                    詳見 &nbsp; 租用說明。
+            </div>
+
+
+            <div class="QA-content-1">
+                <div class="QA-text-title">支付方式</div>
+                <div class="QA-content-Q">
+                    <div> Q &nbsp;有哪些支付方式？
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        我們目前接受以下付款方式：<br>
+
+                        信用卡、LINE Pay、Apple Pay<br>
+
+                        使用時將暫時扣留一筆臨時押金。租期結束後，僅從臨時押金中結清已使用的金額，剩餘金額退還。<br>
+
+                        如果您想在租賃前退款，請取消付款。臨時押金將退還。
+                    </div>
+                </div>
+            </div>
+            <div class="QA-content-1" id="Q4">
+                <div class="QA-text-title">其他</div>
+                <div class="QA-content-Q">
+                    <div> Q &nbsp;雨傘的尺寸和款式有哪些選擇？
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        詳見 &nbsp; <a href="product.html">商品一覽</a>
+                    </div>
+                </div>
+            </div>
+            <div class="QA-content-1">
+                <div class="QA-content-Q">
+                    <div> Q &nbsp;如何聯繫客服人員?
+                        <div class="toggle-button">+</div>
+                    </div>
+                    <div class="QA-content-A">
+                        客服電話：0800-080-000
+                    </div>
                 </div>
             </div>
 
@@ -114,43 +179,52 @@
     </div>
 
     <div class="section footer">
-        <div class="footer-content">
-            <div class="footer-content-text">
-                下雨天又忘記帶傘了嗎
+        <div class="footer-text-img-area">
+            <div class="footer-content-img">
+                <img class="umbrella-girl" src="./img/umbrella-girl.png" alt="umbrella-girl">
             </div>
-            <div class="footer-content-text">別擔心</div>
-            <div class="footer-content-text">人人借傘</div>
-            <div class="footer-content-text">
-                讓您 &nbsp;
-                隨時租&nbsp;
-                隨時還</div>
+            <div class="footer-content">
+                <div class="footer-content-text">
+                    <div class="footer-content-text-1">
+                        下雨天又忘記帶傘了嗎
+                    </div>
+                    <div class="footer-content-text-2">別擔心</div>
+                    <div class="footer-content-text-3">人人借傘</div>
+                    <div class="footer-content-text-4">
+                        讓您 &nbsp;
+                        隨時租&nbsp;
+                        隨時還</div>
+                </div>
+            </div>
         </div>
         <div class="footer-text">
-            <div class="footer-wrap">
-                <div class="footer-list">
-                    <ul class="footer-list-g1">
-                        <li><a href="#">首頁</a>
-                        <li>
-                        <li><a href="#">據點查詢</a>
-                        <li>
-                        <li><a href="#">租用說明</a>
-                        <li>
-                        <li><a href="#">Q&A</a>
-                        <li>
-                    </ul>
-                </div>
-                <div class="dowload-icon">
-                    <img src="./img/googlePlay.png" alt="googlePlay">
-                    <img src="./img/AppleStore.png" alt="AppleStore">
-                </div>
-            </div>
-            <div class="company-info">
-                <div class="company-info-1">客服電話：0800-080-000</div>
-                <div class="company-info-2">台北市松山區八德路二段200號3樓</div>
-                <div class="company-info-3">人人借傘股份有限公司</div>
 
+            <div class="footer-wrap">
+                <ul class="footer-list">
+                    <ul class="footer-list-g1">
+                        <li><a href="index.html">關於我們</a></li>
+                        <li><a href="spot.html">據點查詢</a></li>
+                        <li><a href="howToUse.html">租用說明</a></li>
+                        <li><a href="product.html">商品一覽</a></li>
+                        <li><a href="QA.html">Q&A</a></li>
+                    </ul>
+
+                </ul>
+                <div class="info-icon">
+                    <div class="company-info">
+                        <div class="company-info-1">客服電話：0800-080-000</div>
+                        <div class="company-info-2">台北市松山區八德路二段200號3樓</div>
+                        <div class="company-info-3">人人借傘股份有限公司</div>
+                    </div>
+
+                    <div class="dowload-icon">
+                        <img src="./img/googlePlay.png" alt="googlePlay">
+                        <img src="./img/AppleStore.png" alt="AppleStore">
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
     <footer>
 
@@ -159,20 +233,55 @@
     </footer>
 
 
-
     <script>
-        var add = document.querySelector('.add');
-        var hide = document.querySelector('.hide');
-        var A = document.querySelector('.QA-content-A');
-        add.onclick = function () {
-            add.innerHTML = "-";
-            A.style.display = "block";
-        };
-        hide.onclick = function () {
-            hide.innerHTML = "+";
-        };
 
+        function navToggle() {
+            let x = document.querySelector(".nav-list");
+            if (x.className === "nav-list") {
+                x.className += " list-wrap";
 
+            } else {
+                x.className = "nav-list";
+
+            }
+        }
+
+        let open = document.querySelector("#open");
+        open.addEventListener("click", hide);
+        function hide() {
+            if (open.className === "fa-solid fa-bars") {
+                open.className = "fa-solid fa-xmark";
+
+            } else {
+                open.className = "fa-solid fa-bars";
+            }
+
+        }
+        // var add = document.querySelector('.add');
+        // var hide = document.querySelector('.hide');
+        // var A = document.querySelector('.QA-content-A');
+        var A = document.querySelector('.toggle-button');
+
+        A.onclick = function () {
+            if (A.innerHTML == "+") {
+                this.innerHTML = "-";
+            }
+            else { this.innerHTML = "+"; }
+        }
+        // document.querySelector('.toggle-button').onclick = function () {
+        //     this.innerHTML = "+";
+        // }
+        // };
+        // hide.onclick = function () {
+        //     hide.innerHTML = "+";
+        // };
+
+        $(document).ready(function () {
+            $(".toggle-button").click(function () {
+                // $('.QA-content-A').slideToggle();
+                $(this).parents('.QA-content-Q').children('.QA-content-A').slideToggle();
+            });
+        });
 
 
 

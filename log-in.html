@@ -10,10 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Noto+Sans+TC:wght@300&display=swap"
-        rel="stylesheet">
-
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- new -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+    <!-- OWL -->
+    <!-- <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css"> -->
+
     <title>KASA RENTAL</title>
 </head>
 
@@ -21,28 +38,27 @@
 
     <header class="nav nav-bg-2">
         <nav>
+            <a href="#" class="toggle-btn" onclick="navToggle()">
+                <i id="open" class="fa-solid fa-bars"></i>
+            </a>
             <div class="nav-content">
-                <!-- <div class="logo-area"></div> -->
-
                 <a href="index.html"><img src="./img/logo.png" alt="logo" id="logo"></a>
 
                 <ul class="nav-list">
-                    <li><a href="index.html">關於我們</a></li>
-                    <li><a href="spot.html">據點查詢</a></li>
-                    <li><a href="howToUse.html">租用說明</a></li>
-                    <li><a href="product.html">商品一覽</a></li>
-                    <li><a href="QA.html">Q&A</a></li>
-
-                </ul>
-
-                <ul class="nav-list logIn">
-                    <li><a href="log-in.html">登入</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="index.html#about">關於我們</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="spot.html">據點查詢</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="index.html#howToUse">租用說明</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="product.html">商品一覽</a></li>
+                    <li class="nav-list-text"><a class="a-line" href="QA.html">Q&A</a></li>
+                    <li class="nav-list-text logIn"><a href="log-in.html"><i class="fa-regular fa-circle-user"></i></a>
+                    </li>
                 </ul>
             </div>
         </nav>
 
+
     </header>
-    <div class="title-group mg-top-0" style="margin-left: 48%;">
+    <div class="title-group mg-top-0">
         <img src="./img/h1-bg.png" alt="cloud" class="h1-cloud-bg">
         <div class="div-white"></div>
         <div class="title">
@@ -97,11 +113,10 @@
 
 
     <div class="section footer">
-
-        <div class="footer-content-img">
-            <img class="umbrella-girl" src="./img/umbrella-girl.png" alt="umbrella-girl">
-        </div>
-        <div class="footer-text">
+        <div class="footer-text-img-area">
+            <div class="footer-content-img">
+                <img class="umbrella-girl" src="./img/umbrella-girl.png" alt="umbrella-girl">
+            </div>
             <div class="footer-content">
                 <div class="footer-content-text">
                     <div class="footer-content-text-1">
@@ -115,28 +130,32 @@
                         隨時還</div>
                 </div>
             </div>
+        </div>
+        <div class="footer-text">
+
             <div class="footer-wrap">
-                <div class="footer-list">
+                <ul class="footer-list">
                     <ul class="footer-list-g1">
-                        <li><a href="#">首頁</a>
-                        <li>
-                        <li><a href="#">據點查詢</a>
-                        <li>
-                        <li><a href="#">租用說明</a>
-                        <li>
-                        <li><a href="#">Q&A</a>
-                        <li>
+                        <li><a href="index.html">關於我們</a></li>
+                        <li><a href="spot.html">據點查詢</a></li>
+                        <li><a href="howToUse.html">租用說明</a></li>
+                        <li><a href="product.html">商品一覽</a></li>
+                        <li><a href="QA.html">Q&A</a></li>
                     </ul>
+
+                </ul>
+                <div class="info-icon">
+                    <div class="company-info">
+                        <div class="company-info-1">客服電話：0800-080-000</div>
+                        <div class="company-info-2">台北市松山區八德路二段200號3樓</div>
+                        <div class="company-info-3">人人借傘股份有限公司</div>
+                    </div>
+
+                    <div class="dowload-icon">
+                        <img src="./img/googlePlay.png" alt="googlePlay">
+                        <img src="./img/AppleStore.png" alt="AppleStore">
+                    </div>
                 </div>
-                <div class="dowload-icon">
-                    <img src="./img/googlePlay.png" alt="googlePlay">
-                    <img src="./img/AppleStore.png" alt="AppleStore">
-                </div>
-            </div>
-            <div class="company-info">
-                <div class="company-info-1">客服電話：0800-080-000</div>
-                <div class="company-info-2">台北市松山區八德路二段200號3樓</div>
-                <div class="company-info-3">人人借傘股份有限公司</div>
             </div>
         </div>
     </div>
@@ -146,6 +165,30 @@
         <div class="copyright">
             COPYRIGHT © 2023 BY KASA RENTAL ALL RIGHTS RESERVED.</div>
     </footer>
+    <script>
+        function navToggle() {
+            let x = document.querySelector(".nav-list");
+            if (x.className === "nav-list") {
+                x.className += " list-wrap";
+
+            } else {
+                x.className = "nav-list";
+
+            }
+        }
+
+        let open = document.querySelector("#open");
+        open.addEventListener("click", hide);
+        function hide() {
+            if (open.className === "fa-solid fa-bars") {
+                open.className = "fa-solid fa-xmark";
+
+            } else {
+                open.className = "fa-solid fa-bars";
+            }
+
+        }
+    </script>
 </body>
 
 </html>
