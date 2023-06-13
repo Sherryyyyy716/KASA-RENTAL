@@ -80,68 +80,71 @@
                 <div class="line line3"></div>
                 <div class="line line4"></div>
             </div>
-            <!-- 北部 -->
-            <div class="area-same  area1">
-                <div class="area-title">北部地區</div>
-                <div class="area-content">
-                    <ul>
-                        <li><a href="">臺北市</a></li>
-                        <li><a href="">新北市</a></li>
-                        <li><a href="">基隆市</a></li>
-                        <li><a href="">宜蘭縣</a></li>
-                        <li><a href="">桃園市</a></li>
-                        <li><a href="">新竹縣</a></li>
-                        <li><a href="">新竹市</a></li>
-                    </ul>
+            <div class="all-area">
+                <!-- 北部 -->
+                <div class="area-same  area1">
+                    <div class="area-title"> 北部地區</div>
+                    <div class="area-content">
+                        <ul>
+                            <li><a href="">臺北市</a></li>
+                            <li><a href="">新北市</a></li>
+                            <li><a href="">基隆市</a></li>
+                            <li><a href="">宜蘭縣</a></li>
+                            <li><a href="">桃園市</a></li>
+                            <li><a href="">新竹縣</a></li>
+                            <li><a href="">新竹市</a></li>
+                        </ul>
+                    </div>
+
                 </div>
+                <!-- 中部 -->
+                <div class="area-same  area2">
+                    <div class="area-title">中部地區</div>
+                    <div class="area-content">
+                        <ul>
+                            <li><a href="">臺中市</a></li>
+                            <li><a href="">苗栗縣</a></li>
+                            <li><a href="">彰化縣</a></li>
+                            <li><a href="">雲林縣</a></li>
+                            <li><a href="">南投縣</a></li>
 
-            </div>
-            <!-- 中部 -->
-            <div class="area-same  area2">
-                <div class="area-title">中部地區</div>
-                <div class="area-content">
-                    <ul>
-                        <li><a href="">臺中市</a></li>
-                        <li><a href="">苗栗縣</a></li>
-                        <li><a href="">彰化縣</a></li>
-                        <li><a href="">雲林縣</a></li>
-                        <li><a href="">南投縣</a></li>
+                        </ul>
+                    </div>
 
-                    </ul>
                 </div>
-
-            </div>
-            <!-- 南部 -->
-            <div class="area-same area3">
-                <div class="area-title">南部地區</div>
-                <div class="area-content">
-                    <ul>
-                        <li><a href="">高雄市</a></li>
-                        <li><a href="">臺南市</a></li>
-                        <li><a href="">嘉義市</a></li>
-                        <li><a href="">嘉義縣</a></li>
-                        <li><a href="">屏東縣</a></li>
+                <!-- 南部 -->
+                <div class="area-same area3">
+                    <div class="area-title">南部地區</div>
+                    <div class="area-content">
+                        <ul>
+                            <li><a href="">高雄市</a></li>
+                            <li><a href="">臺南市</a></li>
+                            <li><a href="">嘉義市</a></li>
+                            <li><a href="">嘉義縣</a></li>
+                            <li><a href="">屏東縣</a></li>
 
 
-                    </ul>
+                        </ul>
+                    </div>
+
                 </div>
-
-            </div>
-            <!-- 東部 -->
-            <div class="area-same area4">
-                <div class="area-title">東部地區</div>
-                <div class="area-content">
-                    <ul>
-                        <li><a href="">花蓮縣</a></li>
-                        <li><a href="">臺東縣</a></li>
+                <!-- 東部 -->
+                <div class="area-same area4">
+                    <div class="area-title">東部地區</div>
+                    <div class="area-content">
+                        <ul>
+                            <li><a href="">花蓮縣</a></li>
+                            <li><a href="">臺東縣</a></li>
 
 
-                    </ul>
+                        </ul>
+                    </div>
+
                 </div>
-
             </div>
-
         </div>
+
+    </div>
     </div>
 
     <div class="section footer">
@@ -221,6 +224,14 @@
             }
 
         }
+        let screenW = $(window).width()
+        if (screenW < 1020)
+            $(document).ready(function () {
+                $(".area-same .area-title").click(function () {
+                    // $('.QA-content-A').slideToggle();
+                    $(this).next('.area-content').toggle(800);
+                });
+            });
     </script>
 
 

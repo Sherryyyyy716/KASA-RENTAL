@@ -32,6 +32,16 @@
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css"> -->
 
     <title>KASA RENTAL</title>
+    <style>
+        .owl-theme .owl-dots .owl-dot span {
+            background: #006ca23c;
+        }
+
+        .owl-theme .owl-dots .owl-dot.active span,
+        .owl-theme .owl-dots .owl-dot:hover span {
+            background: #006ca2;
+        }
+    </style>
 </head>
 <!-- <i id="open" class="fa-solid fa-bars"></i>
 <i id="close" class="fa-solid fa-xmark"></i> -->
@@ -318,6 +328,7 @@
         }
 
         $(document).ready(function () {
+
             $("#typed1").typed({
                 strings: ["因應台灣地區多變氣候而生"],
                 typeSpeed: 300,
@@ -334,8 +345,9 @@
             // 提供人們便利、即時的服務
 
 
-        });
+        })
         $(document).ready(function () {
+
             $("#typed2").typed({
                 strings: ["提供人們便利、即時的服務"],
                 typeSpeed: 300,
